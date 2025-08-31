@@ -71,5 +71,13 @@
       "likes": 2,
       "createdAt": "2024-08-30T14:00:00.000Z"
     }
+  ],
+  "reactions": [
+    {
+      "id": "1",
+      "postId": "1",
+      "userId": "user_2j5b...",
+      "type": "like"
+    }
   ]
 }
