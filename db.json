@@ -1,14 +1,75 @@
 {
+  "users": [
+    {
+      "id": "user_2j5b...",
+      "username": "triphan",
+      "fullName": "Tri Phan",
+      "imageUrl": "https://img.clerk.com/..."
+    }
+  ],
   "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+    {
+      "id": "1",
+      "slug": "test-post-1",
+      "title": "Welcome to the New API!",
+      "content": "This is the full content of the first post, now being served from my-json-server. This allows for a persistent, shareable development experience.",
+      "excerpt": "This is the first post from our new API...",
+      "authorId": "user_2j5b...",
+      "authorName": "Tri Phan",
+      "tags": ["api", "json-server", "nextjs"],
+      "likes": 25,
+      "published": true,
+      "createdAt": "2024-08-31T10:00:00.000Z",
+      "updatedAt": "2024-08-31T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "slug": "understanding-server-components",
+      "title": "Understanding Server Components",
+      "content": "Next.js Server Components allow for UI to be rendered on the server, which can improve performance by reducing the amount of JavaScript sent to the client. This post explores the benefits and use cases.",
+      "excerpt": "A deep dive into the power of Next.js Server Components...",
+      "authorId": "user_2j5b...",
+      "authorName": "Jane Doe",
+      "tags": ["react", "nextjs", "performance"],
+      "likes": 50,
+      "published": true,
+      "createdAt": "2024-08-30T12:00:00.000Z",
+      "updatedAt": "2024-08-30T12:00:00.000Z"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    {
+      "id": "1",
+      "postId": "1",
+      "parentId": null,
+      "content": "This is a great first step!",
+      "authorId": "user_2j5b...",
+      "authorName": "Jane Doe",
+      "authorImageUrl": "https://i.pravatar.cc/150?u=jane",
+      "likes": 16,
+      "createdAt": "2024-08-31T11:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "postId": "2",
+      "parentId": null,
+      "content": "Thanks for this explanation!",
+      "authorId": "user_2j5b...",
+      "authorName": "John Smith",
+      "authorImageUrl": "https://i.pravatar.cc/150?u=john",
+      "likes": 5,
+      "createdAt": "2024-08-30T13:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "postId": "2",
+      "parentId": "2",
+      "content": "You're welcome!",
+      "authorId": "user_2j5b...",
+      "authorName": "Jane Doe",
+      "authorImageUrl": "https://i.pravatar.cc/150?u=jane",
+      "likes": 2,
+      "createdAt": "2024-08-30T14:00:00.000Z"
+    }
+  ]
 }
